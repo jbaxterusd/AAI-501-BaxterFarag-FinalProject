@@ -41,4 +41,4 @@ Project Description:
 
 Aknowledgements: 
 
-Thank you to our professor, Dave Friesen for his continued support and guidance. Thank you to the MS AAI program at USD for the opportunity and curriculum to perform the project. 
+Thank you to our professor, Dave Friesen, for his continued support and guidance. Thank you to the MS AAI program at USD for the opportunity and curriculum to perform the project. 
