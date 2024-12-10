@@ -37,7 +37,13 @@ Technologies:
 - Matplotlib 
 
 Project Description: 
- 
+This project implements advanced artificial intelligence techniques to address critical challenges in breast cancer diagnosis, utilizing the **Curated Breast Imaging Subset of the Digital Database for Screening Mammography (CBIS-DDSM)**. The primary objective was to develop and evaluate two machine learning models: a **Convolutional Neural Network (CNN)** based on ResNet50 architecture and a **Random Forest Classifier**, to classify mammograms as benign or malignant with a focus on mass segmentation.
+
+Data preprocessing involved resizing DICOM mammogram images to 224x224 grayscale format and converting them into NumPy arrays, ensuring compatibility with the ResNet50 model. A pre-trained ResNet50, fine-tuned on the CBIS-DDSM dataset, achieved an accuracy of 61.11%. Its residual connections helped mitigate vanishing gradient issues and enhance feature extraction for mass segmentation. Additionally, a Random Forest Classifier was implemented using features extracted from the penultimate layer of ResNet50. This approach leveraged the interpretability and noise-reduction strengths of Random Forests, achieving an accuracy of 48.41%. Analysis of results revealed areas for optimization, particularly in preprocessing and model design, given the equal class distribution (benign vs. malignant) in the dataset.
+
+Future directions include incorporating Region of Interest (ROI) masks from CBIS-DDSM to improve model specificity and align training with expert annotations. Enhanced hyperparameter tuning, such as enabling deeper layer training in ResNet50, could further boost performance. Improved data augmentation strategies and exploration of hybrid AI models are also proposed to enhance both accuracy and interpretability. These developments aim to bridge the gap between AI research and clinical application by addressing key barriers to adoption, such as model transparency and reliability.
+
+This project demonstrates the potential of hybrid AI approaches in medical image classification while identifying opportunities for optimization and further research. It contributes to bridging the gap between AI and clinical practice by emphasizing interpretable and actionable insights for healthcare professionals.  
 
 Aknowledgements: 
 
